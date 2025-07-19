@@ -1,118 +1,54 @@
 # Rainfall-Prediction-model
-🌧️ Rainfall Prediction using LSTM and Weather Data API
-This project aims to predict rainfall using a Long Short-Term Memory (LSTM) neural network trained on historical weather data. It integrates live weather data from a Weather API and leverages deep learning for time-series forecasting.
+# 🌧️ Rainfall Prediction using LSTM and Weather Data API
 
-📌 Project Overview
-Rainfall forecasting is vital for agriculture, disaster management, and water resource planning. This project uses:
+This project predicts rainfall using an LSTM (Long Short-Term Memory) neural network trained on weather data obtained via a weather API. The goal is to use past weather conditions to forecast rainfall accurately over future time periods.
 
-LSTM (Long Short-Term Memory) for time-series prediction.
+## 📌 Overview
 
-Weather Data API (e.g., OpenWeatherMap, WeatherAPI) for real-time or historical weather information.
+- **Model Type**: LSTM (Deep Learning - Time Series)
+- **Data Source**: Weather API (e.g., OpenWeatherMap)
+- **Target**: Rainfall (mm or binary prediction: rain/no rain)
 
-🧠 Model Features
-Temperature
+## 🧰 Features Used
 
-Humidity
+- Temperature
+- Humidity
+- Wind Speed
+- Atmospheric Pressure
+- Rainfall (historical)
+- Date & Time
 
-Wind Speed
+---
 
-Pressure
+## 📦 Installation
 
-Precipitation (Rain)
+### 1. Clone the Repository
+git clone https://github.com/yourusername/rainfall-prediction-lstm.git
+cd rainfall-prediction-lstm
 
-Time Series Windowing
-
-📦 Requirements
-Install dependencies using pip:
-
-bash
-Copy code
+### 2. Install Dependencies
 pip install -r requirements.txt
-Main Dependencies
-Python 3.8+
 
-TensorFlow / Keras
-
-Pandas
-
-NumPy
-
-Matplotlib / Seaborn
-
-Requests (for API calls)
-
-🔄 Data Pipeline
-Data Collection: Fetch historical weather data using a weather API.
-
-Preprocessing: Clean and scale the data. Apply time series windowing.
-
-Modeling: Build and train an LSTM model on the weather features.
-
-Prediction: Predict rainfall probability or rainfall amount for a given time period.
-
-Evaluation: Evaluate model performance using metrics like MAE or RMSE.
-
-⚙️ Setup and Usage
-1. Clone the Repository
-bash
-Copy code
-git clone https://github.com/yourusername/rainfall-lstm-predictor.git
-cd rainfall-lstm-predictor
-2. Set Up API Key
-Create a .env file and add your API key:
-
-env
-Copy code
+### 3. Setup Environment Variables
 WEATHER_API_KEY=your_api_key_here
-3. Run Training
-bash
-Copy code
-python train_model.py
-4. Run Prediction
-bash
-Copy code
-python predict.py --location "New York" --days 7
-📊 Results
-Include visualizations of:
 
-Actual vs Predicted rainfall
+## 🚀 Usage
+### Train the LSTM Model and Make Predictions.
 
-Loss curve during training
+## 📊 Example Outputs
+### 1. Predicted vs Actual Rainfall Graphs
+### 2. Training Loss Curves
+### 3. Accuracy / RMSE / MAE Metrics
 
-Feature importance (optional)
+## 📈 Evaluation Metrics
+### 1. MAE (Mean Absolute Error)
+### 2. RMSE (Root Mean Squared Error)
+### 3. R² Score (Optional)
 
-🧪 Evaluation Metrics
-Mean Absolute Error (MAE)
+## 🔮 Future Improvements
+### 1. Deploy model with Flask or Streamlit
+### 2. Use ConvLSTM for spatial data
+### 3. Extend to drought or flood forecasting
+### 4. Integrate satellite or radar data
 
-Root Mean Squared Error (RMSE)
-
-R² Score (Optional)
-
-📁 Project Structure
-bash
-Copy code
-rainfall-lstm-predictor/
-│
-├── data/               # Raw and processed datasets
-├── models/             # Saved models
-├── src/                # Scripts (API calls, model training, etc.)
-│   ├── api.py
-│   ├── preprocess.py
-│   ├── train_model.py
-│   └── predict.py
-├── .env
-├── requirements.txt
-└── README.md
-🔐 API Source Options
-OpenWeatherMap
-
-WeatherAPI
-
-Visual Crossing
-
-🚀 Future Work
-Incorporate satellite data
-
-Add spatial rainfall prediction using ConvLSTM
-
-Deploy with Flask/Streamlit
+```bash
