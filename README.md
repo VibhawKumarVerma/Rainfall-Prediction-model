@@ -36,19 +36,19 @@ WEATHER_API_KEY=your_api_key_here
 ### Train the LSTM Model and Make Predictions.
 
 ## 📊 Example Outputs
-- ### Predicted vs Actual Rainfall Graphs
-### 2. Training Loss Curves
-### 3. Accuracy / RMSE / MAE Metrics
+- Predicted vs Actual Rainfall Graphs
+- Training Loss Curves
+- Accuracy / RMSE / MAE Metrics
 
 ## 📈 Evaluation Metrics
-### 1. MAE (Mean Absolute Error)
-### 2. RMSE (Root Mean Squared Error)
-### 3. R² Score (Optional)
+- MAE (Mean Absolute Error)
+- RMSE (Root Mean Squared Error)
+- R² Score (Optional)
 
 ## 🔮 Future Improvements
-### 1. Deploy model with Flask or Streamlit
-### 2. Use ConvLSTM for spatial data
-### 3. Extend to drought or flood forecasting
-### 4. Integrate satellite or radar data
+- Deploy model with Flask or Streamlit
+- Use ConvLSTM for spatial data
+- Extend to drought or flood forecasting
+- Integrate satellite or radar data
 
 ```bash
