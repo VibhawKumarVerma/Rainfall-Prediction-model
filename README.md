@@ -36,7 +36,7 @@ WEATHER_API_KEY=your_api_key_here
 ### Train the LSTM Model and Make Predictions.
 
 ## 📊 Example Outputs
-### 1. Predicted vs Actual Rainfall Graphs
+- ### Predicted vs Actual Rainfall Graphs
 ### 2. Training Loss Curves
 ### 3. Accuracy / RMSE / MAE Metrics
 
